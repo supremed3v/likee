@@ -13,9 +13,8 @@ const Welcome = () => {
             >
                 <View>
                     <Text
-                        className="text-2xl text-center text-white font-bold"
+                        className="text-2xl text-center font-pmedium text-white font-bold"
                     >Welcome to Expo Router.</Text>
-                    <Image source={require('../assets/icon.png')} style={{ width: 100, height: 100 }} />
                 </View>
             </ScrollView>
             <StatusBar style="auto" />
