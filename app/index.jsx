@@ -5,14 +5,20 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 const Welcome = () => {
     return (
-        <SafeAreaView className="bg-gray-800 h-full">
-            <ScrollView>
+        <SafeAreaView className="h-full bg-slate-500">
+            <ScrollView
+                contentContainerStyle={{
+                    height: "100%"
+                }}
+            >
                 <View>
-                    <Text>Welcome to Expo Router</Text>
-                    <Image source={require('../assets/logo.png')} style={{ width: 100, height: 100 }} />
+                    <Text
+                        className="text-2xl text-center text-white font-bold"
+                    >Welcome to Expo Router.</Text>
+                    <Image source={require('../assets/icon.png')} style={{ width: 100, height: 100 }} />
                 </View>
             </ScrollView>
-            <StatusBar backgroundColor="#fff" style="light" />
+            <StatusBar translucent={false} />
         </SafeAreaView>
     )
 }
