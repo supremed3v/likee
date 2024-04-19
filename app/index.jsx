@@ -5,7 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 const Welcome = () => {
     return (
-        <SafeAreaView className="h-full bg-slate-500">
+        <SafeAreaView className="bg-gray-800 h-full">
             <ScrollView
                 contentContainerStyle={{
                     height: "100%"
@@ -18,7 +18,7 @@ const Welcome = () => {
                     <Image source={require('../assets/icon.png')} style={{ width: 100, height: 100 }} />
                 </View>
             </ScrollView>
-            <StatusBar translucent={false} />
+            <StatusBar style="auto" />
         </SafeAreaView>
     )
 }
